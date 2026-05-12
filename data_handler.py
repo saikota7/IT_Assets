@@ -1,6 +1,8 @@
 import pandas as pd
+import os
 
-FILE_PATH = r"C:\Users\nkota\Nutreco Nederland B.V\ITOperations-Infrastructure - Documents\Inventory\Masters\Assets_Project\IT_Assets_Data.xlsx"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH = os.path.join(BASE_DIR, "IT_Assets_Data.xlsx")
 
 
 def load_data():
